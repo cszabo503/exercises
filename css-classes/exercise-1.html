@@ -4,42 +4,56 @@
 	<title>Exercise 1</title>
 
 <style>
+	
 	div {
-		border: 1px solid #000000;
+    padding: 10px;
 	}
-	.wrap{
+
+	.wrapper{
 		width: 1000px;
+		margin: 0 auto;
 	}
 
 	.header {
-		width: 700px;
-		background: orange;
+		width: 980px;
+		background: #f2a062;
+		float:left;
 	}
 
 	.sidebar {
-		width: 200px;
-		background: purple;
+		width: 180px;
+		height: 200px;
+		background: #f6bd62;
 		float:left;
 	}
 
 	.content {
-		width: 500px;
-		background: blue;
+		width: 780px;
+		height: 200px;
+		background: #507088;
 		float:left;
 	}
 
 	.footer {
-		width: 700px;
-		background: green;
-		border: 10px red dashed;
+		width: 980px;
+		background: #b7ce3f;
+		float:left;
+	}
+
+	p {
+		font-family: Helvetica;
+		font-size: 15px;
+		color: #ffffff;
+		padding: 0 5px 0 5px;
 	}
 
 
 </style>
 
 </head>
+<body>
 
-<body class="wrap">
+<div class="wrapper">
 
 	<div class="header"><p>header</p></div>
 
@@ -48,6 +62,6 @@
 
 	<div class="footer"><p>footer</p></div>
 
+</div>
 </body>
-
 </html>
