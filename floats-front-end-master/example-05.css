@@ -13,20 +13,48 @@
 .header {}
 /* hint! what do you have to add here? */
 
-.logo {}
+.logo {
+	float:left;
+}
 
-.navigation {}
+.navigation {
+	float:right;
+}
 
-.sidebar {}
+.sidebar {
+	float:left;
+	width: 250px;
+	height: 300px;
+}
 
 .main-content {}
 /* hint! you have to contain the floated children elements. */
 
 .sub-content {
-	/* hint! */
+	float:right;
+	width: 600px;
+	height: 130px;
 }
 .sub-content-2 {
-	/* hint! */
+	float:right;
+	width: 600px;
+	height: 130px;
+	margin-top: 20px;
 }
 
-.footer {}
+.footer {
+	clear:both;
+}
+
+
+.header:after {
+	display:block;
+	content: "";
+	clear:both;
+}
+
+.main-content:after {
+	display:block;
+	content: "";
+	clear:both;
+}

@@ -15,13 +15,15 @@
 /* hint! what do you need to add here? */
 
 .widget {
+	float:left;
+
 	/* how do you make the widgets float next to each other? */
 	/* what happens when you change float left to float right? why? */
 }
 
 
 .footer {
-	/* hint! */
+ 	clear:both;
 }
 
 
@@ -31,4 +33,10 @@
 /* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
 .widget.fix {
 	background: #8F1B65;
+}
+
+.main-content:after {
+	display:block;
+	content: "";
+	clear:both;
 }

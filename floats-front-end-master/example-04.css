@@ -15,18 +15,31 @@
 /* hint! you have to contain the floated children elements. */
 
 .logo {
-	/* hint! */
+	float:left;
 }
 
 .navigation {
-	/* hint! */
+	float:right;
 }
 
 .sidebar {
+	float:left;
+	width: 250px;
+	height: 300px;
 }
 
 .main-content {
+	float:left;
+	width: 734px;
+	height: 300px;
 }
 
 .footer {
+	clear:both;
+}
+
+.header:after {
+	display:block;
+	content: "";
+	clear:both;
 }

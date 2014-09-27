@@ -13,16 +13,45 @@
 
 .header {}
 
-.logo {}
+.logo {
+	float:left;
+	width:250px;
+}
 
-.navigation {}
+.navigation {
+	float:right;
+	width:650px;
+}
 
-.sidebar {}
+.sidebar {
+	float:left;
+	width:250px;
+}
 
 .main-content {}
 
-.sub-content {}
+.sub-content {
+	float:right;
+	width:650px;
+}
 
-.sub-content-2 {}
+.sub-content-2 {
+	float:right;
+	width:650px;
+}
 
-.footer {}
+.footer {
+	clear:both;
+}
+
+.header:after {
+	display:block;
+	content: "";
+	clear:both;
+}
+
+.main-content:after {
+	display:block;
+	content: "";
+	clear:both;
+}
