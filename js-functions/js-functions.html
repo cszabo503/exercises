@@ -118,22 +118,69 @@
 
 //exrcise angryGandalf   
 
-    var angryGandalf = function(color) {
+    //var angryGandalf = function(color) {
 
-        if (color === 'grey') {
-            return 'You...Shall Not... Pass!'.toUpperCase();
-        } 
-        else if (color === 'white') {
-            return 'You mearly passed me to your demise.';
+        //if (color === 'grey') {
+        //   return 'You...Shall Not... Pass!'.toUpperCase();
+        //} 
+        //else if (color === 'white') {
+        //    return 'You mearly passed me to your demise.';
+        //}
+        //else {
+         //   return 'I do not think I am Gandalf anymore.';
+        //}
+
+   // };     
+
+
+//exercise lifeLine
+
+    function lifeLine(job, location, spouse, children) {
+        var string = 'You are a';
+        var firstJobLetter = job.charAt(0).toLowerCase();
+        if (firstJobLetter === "a" || firstJobLetter === "e" || firstJobLetter === "i" || firstJobLetter === "o" || firstJobLetter === "u") {
+            string += "an ";
+        }
+        else{
+            string += "a ";
+        }
+
+
+        string += job;
+        string += " from ";
+        string += location;
+        string += " and married to ";
+        string += spouse;
+        string += " with ";
+        string += " kids.";
+
+        return string;
+    }
+
+console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq with 3 kids.');
+console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling with 3000 kids.');
+console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal with 0 kids.');
+
+
+//exercise ofAge
+
+    function ofAge(age) {
+        if (age >= 21) {
+            return true;
         }
         else {
-            return 'I do not think I am Gandalf anymore.';
+            return false;
         }
+    }
 
-    };     
+    
 
 
-
+console.assert(ofAge(21) === true);
+console.assert(ofAge(22) === true);
+console.assert(ofAge(18) === false);
+console.assert(ofAge(0) === false);
+console.assert(ofAge(-2) === false);
 
 
         </script>
