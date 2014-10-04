@@ -135,31 +135,74 @@
 
 //exercise lifeLine
 
-    function lifeLine(job, location, spouse, children) {
-        var string = 'You are a';
-        var firstJobLetter = job.charAt(0).toLowerCase();
-        if (firstJobLetter === "a" || firstJobLetter === "e" || firstJobLetter === "i" || firstJobLetter === "o" || firstJobLetter === "u") {
-            string += "an ";
-        }
-        else{
-            string += "a ";
-        }
+//     function lifeLine(job, location, spouse, children) {
+//         var string = 'You are a';
+//         var firstJobLetter = job.charAt(0).toLowerCase();
+//         if (firstJobLetter === "a" || firstJobLetter === "e" || firstJobLetter === "i" || firstJobLetter === "o" || firstJobLetter === "u") {
+//             string += "an ";
+//         }
+//         else{
+//             string += "a ";
+//         }
 
 
-        string += job;
-        string += " from ";
-        string += location;
-        string += " and married to ";
-        string += spouse;
-        string += " with ";
-        string += " kids.";
+//         string += job;
+//         string += " from ";
+//         string += location;
+//         string += " and married to ";
+//         string += spouse;
+//         string += " with ";
+//         string += " kids.";
 
-        return string;
-    }
+//         return string;
+//     }
 
-console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq with 3 kids.');
-console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling with 3000 kids.');
-console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal with 0 kids.');
+// console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq with 3 kids.');
+// console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling with 3000 kids.');
+// console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal with 0 kids.');
+
+
+/**
+ * @exercise 1 - lifeLine
+ * @description takes children, partner's name, hometown, and job
+ * @returns 'You are a W from X and married to Y  with Z kids.'
+**/
+
+// Create function with name tellFortune and appropriate parameters
+// Take 4 arguments: number of children, partner's name, hometown, job title.
+
+  // Define string variable that will have that output
+
+  // Return that string
+
+function firstJobletter(a, an){
+    var jobLetter = 
+    if ()
+}
+
+
+function lifeLine(job, homeTown, partnerName, numberChildren) {
+    var life= "You are a ";
+    
+
+    life += job;
+    life += " from ";
+    life += homeTown;
+    life += " and married to ";
+    life += partnerName;
+    life += " with ";
+    life += numberChildren;
+
+
+    return life;
+}  
+
+console.log(lifeLine('bball player', 'Spain', 'Shaq', 3))
+
+// console.assert(lifeLine('bball player', 'Spain', 'Shaq', 3) === 'You are a bball player from Spain and married to Shaq  with 3 kids.' );
+// console.assert(lifeLine('stunt double', 'Japan', 'Ryan Gosling', 3000) === 'You are a stunt double from Japan and married to Ryan Gosling  with 3000 kids.');
+// console.assert(lifeLine('Elvis impersonator', 'Russia', 'The Oatmeal', 0) === 'You are a Elvis impersonator from Russia and married to The Oatmeal  with 0 kids.') ;
+
 
 
 //exercise ofAge
