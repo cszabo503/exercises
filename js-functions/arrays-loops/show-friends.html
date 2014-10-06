@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Show Friends</title>
+</head>
+
+<body>
+<input id="friendName"></input>
+<button id="addButton">SUBMIT</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script>
+
+var friends = ['Alex', 'Elyse', 'Mae', 'Sartaj'];
+
+
+function createList(){
+	var list = "<ul>";
+
+	for (var i = 0; i < friends.length; i ++) {
+		var name = '<li>' + friends[i] + "</li>";
+		list += name;
+	};
+
+	list = list + '</ul>';
+
+	$("body").append(list);
+}
+
+
+var addFriend = function(){
+		friends.push($('#friendName').val());
+	};
+
+$('#addButton').on('click', newFriend);
+
+
+function newFriend(){
+	addFriend();
+	createList();
+	}
+
+
+
+</script>
+
+</body>
+</html>
+
+
