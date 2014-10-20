@@ -1,0 +1,55 @@
+
+
+<h1>Button Clicker</h1>
+
+<label for="name">Your name:</label>
+<span class='name'></span>
+<span class='score'></span>
+<input type="text" id='name'</input>
+
+<main>
+  <button>click me</button>
+</main>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+	$(document).on('ready',function(){
+		$('#name').on('change', function(){
+		$('.name').html($('#name').val() + "'s");
+		});
+	});
+
+	function countButtons() {
+		return $("button").length;
+	}
+
+	// function numberButtons() {
+	// 	$('.score').html(function countButtons(){
+	// 		return $('button').length;
+	// 	});
+	// }
+
+	function numberButtons(){
+		$('.score').html(countButtons())
+	}
+
+ 	$("main").on("click", function newButton(){
+		$('main').append('<button> Click Me </button>');
+		countButtons();
+		});
+
+ 	//====== or ========
+
+ 	$("main").on("click", "button", function (){
+ 		addButton();
+ 	});
+	
+
+
+
+	newButton();
+	numberButtons();
+
+</script>

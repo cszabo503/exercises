@@ -53,7 +53,7 @@ var computerChoice = function(){
 		return 'scissors';
 	}
 
-}
+};
 
 
 0 0.33 = rock
